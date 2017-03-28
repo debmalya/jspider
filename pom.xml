@@ -172,7 +172,8 @@
             <dependency>
                 <groupId>com.sleepycat</groupId>
                 <artifactId>je</artifactId>
-                <version>5.0.84</version>
+                <!--  <version>5.0.84</version> -->
+                <version>4.0.92</version>
             </dependency>
 
             <!--spring-->
