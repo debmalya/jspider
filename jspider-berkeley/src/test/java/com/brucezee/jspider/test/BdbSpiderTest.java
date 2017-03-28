@@ -11,6 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class BdbSpiderTest {
                 .setMaxConnTotal(200)
                 .setMaxConnPerRoute(100);
 
-        Scheduler scheduler = new BdbPersistentScheduler("./tmp/db", "hello");
+        Scheduler scheduler = new BdbPersistentScheduler("."+File.separator+"tmp1"+File.separator+"db", "hello");
 
         Spider spider = Spider.create(spiderConfig, siteConfig, new BaiduPageProcessor())
                 .setPipeline(new BaiduPipeline())
