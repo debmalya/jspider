@@ -21,8 +21,7 @@
 		<!-- https://mvnrepository.com/artifact/com.sleepycat/je -->
 		<dependency>
 			<groupId>com.sleepycat</groupId>
-			<artifactId>je</artifactId>
-			<version>4.0.92</version>
+			<artifactId>je</artifactId> 
 		</dependency>
 	</dependencies>
 </project>
