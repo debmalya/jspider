@@ -26,7 +26,7 @@ public class BdbSpiderTest {
                 .setMaxConnTotal(200)
                 .setMaxConnPerRoute(100);
 
-        Scheduler scheduler = new BdbPersistentScheduler("F:\\tmp\\db", "hello");
+        Scheduler scheduler = new BdbPersistentScheduler("./tmp/db", "hello");
 
         Spider spider = Spider.create(spiderConfig, siteConfig, new BaiduPageProcessor())
                 .setPipeline(new BaiduPipeline())
